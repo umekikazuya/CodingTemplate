@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier"
     ],
     "overrides": [
         {
@@ -25,8 +26,12 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "@typescript-eslint"
     ],
     "rules": {
+        "newline-before-return": "error",
+        "no-console": "warn",
+        "no-var": "error",
     }
 }
