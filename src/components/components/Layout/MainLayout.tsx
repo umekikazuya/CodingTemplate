@@ -1,8 +1,8 @@
 type MainLayoutProps = {
   children: React.ReactNode;
-}
+};
 
-export default function MainLayout( {children}: MainLayoutProps): JSX.Element {
+export default function MainLayout({children}: MainLayoutProps): JSX.Element {
   return (
     <div className="h-screen flex overflow-hidden bg-gray-100">
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
@@ -11,5 +11,5 @@ export default function MainLayout( {children}: MainLayoutProps): JSX.Element {
         </main>
       </div>
     </div>
-  )
+  );
 }
